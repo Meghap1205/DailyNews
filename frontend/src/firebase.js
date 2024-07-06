@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from 'firebase/storage';  //file uploaded in storage folder
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDb_u11TM-y9oiGreaPq9S3pdyTjc0EspA",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "uploadfile-392ad.firebaseapp.com",
   projectId: "uploadfile-392ad",
   storageBucket: "uploadfile-392ad.appspot.com",
