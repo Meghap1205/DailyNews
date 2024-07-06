@@ -1,0 +1,47 @@
+/* admin.css */
+.admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 77vh; /* Make sure the div takes the full height of the viewport */
+     background-color:#f0f9e8;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%; 
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: #7bccc4 ;
+    box-shadow: 0 2px 4px #292929;
+}
+thead{
+    font-size: 2rem;
+}
+
+th, td {
+   padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.insert{
+    width: 70%;
+    height: 100px;
+    font-size: 3rem;
+   display: flex;
+   justify-content: end;
+}
+
+
+

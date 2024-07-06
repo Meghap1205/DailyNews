@@ -1,0 +1,110 @@
+.pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color:#f0f9e8;
+    padding-bottom: 12vh;
+  }
+  
+  .pdf-item {
+    width: 20%;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .pdf-item::before {
+    position: absolute;
+    background-color: transparent;
+    content: '';
+    top: 2%;
+    left: -8%;
+    width: 82%;
+    height: 310px;
+    z-index: 2;
+    border: solid 50px#f0f9e8;
+    border-top: solid 70px #f0f9e8;
+    border-radius: 5px;
+  }
+  
+  .pdf-item::after {
+    position: absolute;
+    background-color: transparent;
+    content: '';
+    top: 13%;
+    left: 2%;
+    width: 82%;
+    height: 310px;
+    z-index: 3;
+    border: solid 15px;
+    border-color: #7bccc4 #7bccc4 #2b8cbe #2b8cbe;
+    border-radius: 5px;
+  }
+  
+  .title {
+    padding-top: 25px;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    z-index: 2;
+    text-align: left;
+  }
+  
+  .download {
+    text-align: right;
+    z-index: 3;
+    float: right;
+    padding-right: 2rem;
+    font-size: 2rem;
+  }
+  
+  .pdf-item a {
+    color: #292929;
+    text-decoration: none;
+  }
+  
+  .pdf {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .pdf-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 480px) {
+    .pdf-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+    }
+  
+    .pdf-item::before, .pdf-item::after {
+      display: none;
+    }
+  
+    .pdf-item {
+      width: 90%;
+      margin: 10px 0;
+
+    }
+
+    .imagediv{
+        background: url('../../public/newspaper.jpg');
+        width: 70%;
+        height: 40vh;
+        margin-left: 15%;
+        margin-right: 15%;
+        border: solid 10px #232323 ;
+        border-radius: 5px;
+    }
+    .title{
+        padding-left: 3rem;
+    }
+  
+    
+  }
+  

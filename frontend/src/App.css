@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.footer{
+  background: linear-gradient(to bottom, #7bccc4, #bae4bc );
+  align-items: end;
+  font-size: 1.25rem;
+  text-align: center;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
