@@ -9,7 +9,7 @@ dotenv.config();
 
 const cors = require("cors");
 app.use(cors({
-    origin: ["https://dailynews-frontend.vercel.app"],
+    origin: ["https://daily-news-frontend.vercel.app"],
     methods: ["GET", "POST", "PUT", "HEAD", "DELETE", "PATCH"],
 }));
 
