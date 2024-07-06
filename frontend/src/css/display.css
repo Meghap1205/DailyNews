@@ -93,7 +93,7 @@
     }
 
     .imagediv{
-        background: url('../../public/newspaper.jpg');
+        background: url('/newspaper.jpg');
         width: 70%;
         height: 40vh;
         margin-left: 15%;
