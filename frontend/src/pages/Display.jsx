@@ -9,7 +9,7 @@ const Display = () => {
   useEffect(() => {
     const fetchAll = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/display", {
+        const response = await fetch("https://dailynews-backend.vercel.app/api/display", {
           method: "GET",
         });
 
@@ -40,7 +40,7 @@ const Display = () => {
   const handleDownload = async (url, title) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/proxy?url=${encodeURIComponent(
+        `https://dailynews-backend.vercel.app/proxy?url=${encodeURIComponent(
           url
         )}&title=${encodeURIComponent(title)}`
       );
