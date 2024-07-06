@@ -10,7 +10,7 @@ const Admin = () => {
 
     const fetchAll = async () => {
         try {
-            const response = await fetch("https://dailynews-backend.vercel.app/api/display", {
+            const response = await fetch("https://daily-news-backend.vercel.app/api/display", {
                 method: "GET",
             });
 
@@ -27,7 +27,7 @@ const Admin = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`https://dailynews-backend.vercel.app/api/delete/${id}`, {
+            const response = await fetch(`https://daily-news-backend.vercel.app/api/delete/${id}`, {
                 method: 'DELETE',
             });
 

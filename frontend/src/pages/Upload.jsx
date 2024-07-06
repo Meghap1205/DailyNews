@@ -44,7 +44,7 @@ const Upload = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://dailynews-backend.vercel.app/api/upload", {
+      const response = await fetch("https://daily-news-backend.vercel.app/api/upload", {
         method: "POST",
         headers: {
           "Content-Type" : "application/json",
